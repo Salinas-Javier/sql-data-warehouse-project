@@ -1,3 +1,5 @@
+EXEC bronze.load_bronze
+
 /*
 ===============================================================================
 Stored Procedure: Load Bronze Layer (Source -> Bronze)
@@ -65,7 +67,7 @@ BEGIN
 		TRUNCATE TABLE bronze.crm_sales_details;
 		PRINT '>> Inserting Data Into: bronze.crm_sales_details';
 		BULK INSERT bronze.crm_sales_details
-		FROM 'C:\Users\Usuario\Documents\Data_engieenering\sql-data-warehouse-project\datasets\source_crm\sales_detaols.csv'
+		FROM 'C:\Users\Usuario\Documents\Data_engieenering\sql-data-warehouse-project\datasets\source_crm\sales_details.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
