@@ -1,4 +1,7 @@
-*carga masiva de Datos, es la forma más rapida
+*/ Carga Masiva de los datos /*
+
+
+
 
 BULK INSERT bronze.crm_cust_info
 FROM 'C:\Users\Usuario\Documents\Data_engieenering\sql-data-warehouse-project\datasets\source_crm\cust_info.csv'
