@@ -1,9 +1,14 @@
 /*
 =============================================================
 Carga masiva de los datos
+Podemos encontrar este procedimiento en DataWarehouse--programmability--stored procedures
 =============================================================
 */
 
+
+CREATE OR ALTER PROCEDURE bronze.load_bronze AS
+
+BEGIN
 
 TRUNCATE TABLE bronze.crm_cust_info
 BULK INSERT bronze.crm_cust_info
@@ -58,3 +63,6 @@ WITH (
 	FIELDTERMINATOR = ',',
 	TABLOCK
 );
+
+END
+
