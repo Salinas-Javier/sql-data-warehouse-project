@@ -1,6 +1,8 @@
-/* Carga Masiva de los datos */
-
-
+/*
+=============================================================
+Carga masiva de los datos
+=============================================================
+*/
 
 
 BULK INSERT bronze.crm_cust_info
