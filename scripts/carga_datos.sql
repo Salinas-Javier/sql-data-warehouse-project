@@ -2,6 +2,8 @@
 =============================================================
 Carga masiva de los datos
 Podemos encontrar este procedimiento en DataWarehouse--programmability--stored procedures
+
+En otra Query corremos EXEC bronze.load_bronze 
 =============================================================
 */
 
