@@ -9,6 +9,18 @@ Script Purpose:
 ===============================================================================
 */
 
+/* Esto lo agregue porque no me funconaba*/
+IF NOT EXISTS (
+    SELECT *
+    FROM sys.schemas
+    WHERE name = 'bronze'
+)
+BEGIN
+    EXEC('CREATE SCHEMA bronze');
+END
+
+GO
+
 IF OBJECT_ID('bronze.crm_cust_info', 'U') IS NOT NULL
     DROP TABLE bronze.crm_cust_info;
 GO
